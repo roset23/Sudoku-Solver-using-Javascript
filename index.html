@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='game.js') }}" defer></script>
+</head>
+<body>
+    <div id="game-container">
+        <h1>SUDOKU SOLVER USING JAVASCRIPT</h1>
+        <div id="time" style="font-size: 30px;color:orange">Time: 0:00</div>
+        <div style="font-size: 24px;">Misses: <span id="misses-counter">0</span></div>
+        <div id="sudoku-grid"></div>
+        <div id="controls">
+            <button class="solve" id="solve-btn">Solve</button> &nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp
+            <button class="clear" id="clear-btn">Clear All Inputs</button>
+        </div>
+    </div>
+</body>
+</html>
